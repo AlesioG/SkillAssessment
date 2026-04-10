@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from '@/lib/PageNotFound.jsx';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
-import Layout from './components/Layout';
-import Dashboard from './pages/Dashboard';
-import MyTeam from './pages/MyTeam';
-import Assessments from './pages/Assessments';
-import GapAnalysis from './pages/GapAnalysis';
-import ManageEmployees from './pages/ManageEmployees';
+import Layout from '@/components/Layout';
+import Dashboard from '@/pages/Dashboard';
+import MyTeam from '@/pages/MyTeam';
+import Assessments from '@/pages/Assessments';
+import GapAnalysis from '@/pages/GapAnalysis';
+import ManageEmployees from '@/pages/ManageEmployees';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
