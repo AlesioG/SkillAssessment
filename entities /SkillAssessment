@@ -1,0 +1,144 @@
+{
+  "name": "SkillAssessment",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "skill": {
+      "type": "string",
+      "title": "Skill",
+      "enum": [
+        "Artificial Intelligence",
+        "Cloud Architecture",
+        "DevOps",
+        "Data Engineering",
+        "Cybersecurity",
+        "Soft Skills",
+        "Agile Related",
+        "Leadership Development"
+      ]
+    },
+    "skill_topic": {
+      "type": "string",
+      "title": "Specific Topic"
+    },
+    "current_level": {
+      "type": "number",
+      "title": "Current Level",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "target_level": {
+      "type": "number",
+      "title": "Target Level",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "strategic_dimensions": {
+      "type": "array",
+      "title": "Strategic Skill Dimensions",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Cloud",
+          "Data",
+          "Open Module Architecture",
+          "Integration",
+          "AI Related",
+          "Agile Engineering",
+          "Other",
+          "Soft Skills"
+        ]
+      }
+    },
+    "learning_options": {
+      "type": "array",
+      "title": "Learning Options",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Pluralsight",
+          "RBI Group Trainings",
+          "DataCamp",
+          "ODA",
+          "Udemy",
+          "Coursera",
+          "Other"
+        ]
+      }
+    },
+    "budget_planned": {
+      "type": "number",
+      "title": "Budget Planned (EUR)"
+    },
+    "budget_used": {
+      "type": "number",
+      "title": "Budget Used (EUR)"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "Not Started",
+        "In Progress",
+        "Completed"
+      ]
+    },
+    "reason_not_completed": {
+      "type": "array",
+      "title": "Reason for Not Completed",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Lack of budget",
+          "Missing learning options",
+          "Lack of engagement",
+          "Other"
+        ]
+      }
+    },
+    "reason_other_text": {
+      "type": "string",
+      "title": "Other Reason Details"
+    },
+    "learning_option_used": {
+      "type": "string",
+      "title": "Learning Option Used",
+      "enum": [
+        "Pluralsight",
+        "RBI Trainings",
+        "DataCamp",
+        "ODA",
+        "Udemy",
+        "Coursera",
+        "Other"
+      ]
+    },
+    "feedback": {
+      "type": "string",
+      "title": "Feedback on Skills Development"
+    },
+    "year": {
+      "type": "number",
+      "title": "Assessment Year"
+    }
+  },
+  "required": [
+    "employee_id",
+    "skill",
+    "current_level",
+    "target_level"
+  ]
+}
