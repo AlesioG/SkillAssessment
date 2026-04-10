@@ -1,0 +1,54 @@
+{
+  "name": "Employee",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "title": "First Name"
+    },
+    "last_name": {
+      "type": "string",
+      "title": "Last Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "department": {
+      "type": "string",
+      "title": "Department"
+    },
+    "unit": {
+      "type": "string",
+      "title": "Unit"
+    },
+    "job_position": {
+      "type": "string",
+      "title": "Job Position"
+    },
+    "line_manager_id": {
+      "type": "string",
+      "title": "Line Manager ID"
+    },
+    "tech_lead_id": {
+      "type": "string",
+      "title": "Tech Lead ID"
+    },
+    "role": {
+      "type": "string",
+      "title": "Role",
+      "enum": [
+        "employee",
+        "tech_lead",
+        "line_manager",
+        "ld_expert"
+      ]
+    }
+  },
+  "required": [
+    "first_name",
+    "last_name",
+    "department",
+    "role"
+  ]
+}
